@@ -38,6 +38,7 @@
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.textBoxContraseña = new System.Windows.Forms.TextBox();
             this.buttonIniciarSesion = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -126,18 +127,33 @@
             this.buttonIniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.buttonIniciarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIniciarSesion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonIniciarSesion.Location = new System.Drawing.Point(506, 372);
+            this.buttonIniciarSesion.Location = new System.Drawing.Point(442, 372);
             this.buttonIniciarSesion.Name = "buttonIniciarSesion";
-            this.buttonIniciarSesion.Size = new System.Drawing.Size(182, 51);
+            this.buttonIniciarSesion.Size = new System.Drawing.Size(167, 45);
             this.buttonIniciarSesion.TabIndex = 7;
             this.buttonIniciarSesion.Text = "Iniciar Sesion";
             this.buttonIniciarSesion.UseVisualStyleBackColor = false;
+            this.buttonIniciarSesion.Click += new System.EventHandler(this.buttonIniciarSesion_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(621, 372);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 45);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonIniciarSesion);
             this.Controls.Add(this.textBoxContraseña);
             this.Controls.Add(this.textBoxUsuario);
@@ -170,6 +186,7 @@
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.TextBox textBoxContraseña;
         private System.Windows.Forms.Button buttonIniciarSesion;
+        private System.Windows.Forms.Button button1;
     }
 }
 
