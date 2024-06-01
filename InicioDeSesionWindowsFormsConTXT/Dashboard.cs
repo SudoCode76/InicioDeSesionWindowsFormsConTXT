@@ -26,11 +26,32 @@ namespace InicioDeSesionWindowsFormsConTXT
         private void iconButton8_Click(object sender, EventArgs e)
         {
             panelDashboard.Controls.Clear();
-            UsuariosForm usuariosForm = new UsuariosForm(gestorDeUsuarios);
-            usuariosForm.TopLevel = false;
-            usuariosForm.Dock = DockStyle.Fill;
-            panelDashboard.Controls.Add(usuariosForm);
-            usuariosForm.Show();
+            UsuariosForm mostrar = new UsuariosForm(gestorDeUsuarios);
+            mostrar.TopLevel = false; // forzar formulario dentro del panel
+            mostrar.Dock = DockStyle.Fill;
+            panelDashboard.Controls.Add(mostrar);
+            mostrar.Show();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            panelDashboard.Controls.Clear();
+            productoForm mostrar = new productoForm();
+            mostrar.TopLevel = false;
+            mostrar.Dock = DockStyle.Fill;
+            panelDashboard.Controls.Add(mostrar);
+            mostrar.Show();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            panelDashboard.Controls.Clear();
+            clientesForm mostrar = new clientesForm();
+            mostrar.TopLevel = false;
+            mostrar.Dock = DockStyle.Fill;
+            panelDashboard.Controls.Add(mostrar);
+            mostrar.Show();
+
         }
     }
 }

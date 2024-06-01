@@ -82,8 +82,10 @@ namespace InicioDeSesionWindowsFormsConTXT
         {
             if (dataGridViewUsuarios.SelectedRows.Count > 0)
             {
+                // Obtiene el nombre de usuario seleccionado
                 string nombreUsuario = dataGridViewUsuarios.SelectedRows[0].Cells["NombreUsuario"].Value.ToString();
 
+                // Elimina el usuario utilizando GestorDeUsuarios
                 gestorDeUsuarios.EliminarUsuario(nombreUsuario);
 
                 MessageBox.Show("Usuario eliminado exitosamente.");
