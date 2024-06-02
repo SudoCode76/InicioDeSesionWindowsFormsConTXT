@@ -71,5 +71,37 @@ namespace InicioDeSesionWindowsFormsConTXT.Models
             }
         }
 
+        public void ActualizarStockProducto(string nombreProducto, int cantidadComprada)
+        {
+            List<string> lines = File.ReadAllLines(filePath).ToList();
+            int index = lines.FindIndex(line => line.StartsWith(nombreProducto + ","));
+
+            if (index != -1)
+            {
+                var data = lines[index].Split(',');
+                int stockActual = Convert.ToInt32(data[3]); // Asumiendo que el stock es el cuarto elemento
+                int nuevoStock = stockActual - cantidadComprada;
+
+                if (nuevoStock < 0)
+                {
+                    throw new InvalidOperationException("No hay suficiente stock para realizar la venta.");
+                }
+
+                // Construir la nueva línea con el stock actualizado
+                string nuevaLinea = $"{data[0]},{data[1]},{data[2]},{nuevoStock}";
+                lines[index] = nuevaLinea;
+
+                // Guardar las modificaciones de vuelta al archivo
+                File.WriteAllLines(filePath, lines);
+            }
+            else
+            {
+                throw new ArgumentException("Producto no encontrado");
+            }
+        }
+
+
+
+
     }
 }

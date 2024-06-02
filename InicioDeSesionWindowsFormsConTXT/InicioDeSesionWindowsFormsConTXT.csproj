@@ -53,6 +53,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="categoriasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="categoriasForm.Designer.cs">
+      <DependentUpon>categoriasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="clientesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,13 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FacturaManager.cs" />
+    <Compile Include="facturarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facturarForm.Designer.cs">
+      <DependentUpon>facturarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,8 +88,10 @@
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\GestionCategoria.cs" />
     <Compile Include="Models\GestionCliente.cs" />
+    <Compile Include="Models\GestionVentas.cs" />
     <Compile Include="Models\GestorDeUsuarios.cs" />
     <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\ProductoCategoria.cs" />
     <Compile Include="Models\ProductoManager.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="productoForm.cs">
@@ -84,6 +99,12 @@
     </Compile>
     <Compile Include="productoForm.Designer.cs">
       <DependentUpon>productoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productosCategoriaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productosCategoriaForm.Designer.cs">
+      <DependentUpon>productosCategoriaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,17 +120,26 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="categoriasForm.resx">
+      <DependentUpon>categoriasForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="clientesForm.resx">
       <DependentUpon>clientesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="facturarForm.resx">
+      <DependentUpon>facturarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="productoForm.resx">
       <DependentUpon>productoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productosCategoriaForm.resx">
+      <DependentUpon>productosCategoriaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

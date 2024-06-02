@@ -1,0 +1,8 @@
+Fecha: 02/06/2024 11:03:22
+Cliente: Pedro
+Producto: Producto5, Cantidad: 2, Precio Unitario: 7500, Total: 15000
+--------------------------------------------------
+Fecha: 02/06/2024 11:03:56
+Cliente: Tomas
+Producto: Producto3, Cantidad: 1, Precio Unitario: 15075, Total: 15075
+--------------------------------------------------

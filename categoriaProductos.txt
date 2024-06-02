@@ -1,0 +1,4 @@
+test,Producto2,Descripción del Producto2,6000,30
+test,Producto5,Descripción del Producto5,7500,50
+Categoria 1,Producto2,Descripción del Producto2,6000,30
+Categoria 2,Producto5,Descripción del Producto5,7500,50

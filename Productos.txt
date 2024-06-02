@@ -1,5 +1,5 @@
-Producto1,Descripción del Producto1,120.50,15
-Producto2,Descripción del Producto2,60.00,30
-Producto3,Descripción del Producto3,150.75,20
-Producto4,Descripción del Producto4,200.00,25
-Producto5,Descripción del Producto5,75.00,50
+Producto1,Descripción del Producto1,120.50,13
+Producto2,Descripción del Producto2,60.00,18
+Producto3,Descripción del Producto3,150.75,7
+Producto4,Descripción del Producto4,200.00,21
+Producto5,Descripción del Producto5,75.00,46

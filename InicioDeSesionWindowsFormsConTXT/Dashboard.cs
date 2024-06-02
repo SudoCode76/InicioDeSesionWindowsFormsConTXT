@@ -53,5 +53,47 @@ namespace InicioDeSesionWindowsFormsConTXT
             mostrar.Show();
 
         }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            panelDashboard.Controls.Clear();
+            categoriasForm mostrar = new categoriasForm();
+            mostrar.TopLevel = false;
+            mostrar.Dock = DockStyle.Fill;
+            panelDashboard.Controls.Add(mostrar);
+            mostrar.productosPorCategoria += productosPorCategoria2;
+            mostrar.Show();
+
+        }
+
+        private void productosPorCategoria2(object sender, EventArgs e)
+        {
+            productosPorCategoria();
+        }
+
+        private void productosPorCategoria()
+        {
+            panelDashboard.Controls.Clear();
+            productosCategoriaForm mostrar = new productosCategoriaForm();
+            mostrar.TopLevel = false;
+            mostrar.Dock = DockStyle.Fill;
+            panelDashboard.Controls.Add(mostrar);
+            mostrar.Show();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            panelDashboard.Controls.Clear();
+            facturarForm mostrar = new facturarForm();
+            mostrar.TopLevel = false;
+            mostrar.Dock = DockStyle.Fill;
+            panelDashboard.Controls.Add(mostrar);
+            mostrar.Show();
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
