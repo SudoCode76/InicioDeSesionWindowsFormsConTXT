@@ -35,7 +35,6 @@
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.panelDashboard = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
@@ -50,7 +49,6 @@
             this.flowLayoutPanel1.Controls.Add(this.iconButton3);
             this.flowLayoutPanel1.Controls.Add(this.iconButton4);
             this.flowLayoutPanel1.Controls.Add(this.iconButton5);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton6);
             this.flowLayoutPanel1.Controls.Add(this.iconButton7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -179,25 +177,6 @@
             this.iconButton5.UseVisualStyleBackColor = false;
             this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
-            // iconButton6
-            // 
-            this.iconButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(33)))), ((int)(((byte)(42)))));
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Readme;
-            this.iconButton6.IconColor = System.Drawing.Color.White;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 35;
-            this.iconButton6.Location = new System.Drawing.Point(850, 0);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(125, 61);
-            this.iconButton6.TabIndex = 7;
-            this.iconButton6.Text = "Historial";
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = false;
-            // 
             // iconButton7
             // 
             this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(33)))), ((int)(((byte)(42)))));
@@ -208,14 +187,15 @@
             this.iconButton7.IconColor = System.Drawing.Color.White;
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 35;
-            this.iconButton7.Location = new System.Drawing.Point(975, 0);
+            this.iconButton7.Location = new System.Drawing.Point(850, 0);
             this.iconButton7.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(112, 61);
+            this.iconButton7.Size = new System.Drawing.Size(190, 61);
             this.iconButton7.TabIndex = 3;
             this.iconButton7.Text = "Salir";
             this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton7.UseVisualStyleBackColor = false;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
             // 
             // panelDashboard
             // 
@@ -248,7 +228,6 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton iconButton8;
         private System.Windows.Forms.Panel panelDashboard;

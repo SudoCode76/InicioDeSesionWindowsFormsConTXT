@@ -71,7 +71,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FacturaManager.cs" />
+    <Compile Include="Models\FacturaManager.cs" />
     <Compile Include="facturarForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,12 +88,15 @@
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\GestionCategoria.cs" />
     <Compile Include="Models\GestionCliente.cs" />
+    <Compile Include="Models\GestionReportes.cs" />
     <Compile Include="Models\GestionVentas.cs" />
     <Compile Include="Models\GestorDeUsuarios.cs" />
+    <Compile Include="Models\LineaReporte.cs" />
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\ProductoCategoria.cs" />
     <Compile Include="Models\ProductoManager.cs" />
     <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\Venta.cs" />
     <Compile Include="productoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +116,12 @@
     </Compile>
     <Compile Include="Registrar.Designer.cs">
       <DependentUpon>Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportesForm.Designer.cs">
+      <DependentUpon>reportesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
@@ -152,6 +161,9 @@
     </Compile>
     <EmbeddedResource Include="Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesForm.resx">
+      <DependentUpon>reportesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>

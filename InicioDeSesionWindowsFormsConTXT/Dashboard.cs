@@ -93,6 +93,18 @@ namespace InicioDeSesionWindowsFormsConTXT
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
+            panelDashboard.Controls.Clear();
+            reportesForm mostrar = new reportesForm();
+            mostrar.TopLevel = false;
+            mostrar.Dock = DockStyle.Fill;
+            panelDashboard.Controls.Add(mostrar);
+            mostrar.Show();
+
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
 
         }
     }
